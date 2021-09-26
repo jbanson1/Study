@@ -1,1 +1,1 @@
-# Study
+# Comp Sci Study
