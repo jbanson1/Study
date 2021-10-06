@@ -3,8 +3,8 @@ This repository contains notes and solutions for various CS courses and assignme
 
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
-|AWS Solutions Architect Associate|Pluralsight & [Books]()   |[Link]()|
-|Angular | Pluralsight & [Books]() |[Link]()|
+|AWS Solutions Architect Associate|Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_AWS_Solutions_Architect)   |[Link]()|
+|Angular | Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_Angular) |[Link]()|
 
 
 # Supporting studies
