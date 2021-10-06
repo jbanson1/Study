@@ -5,3 +5,7 @@ This repository contains notes and solutions for various CS courses and assignme
 |--|--|--|
 |AWS Solutions Architect Associate|Pluralsight & [Books]()   |[Link]()|
 |Angular | Pluralsight & [Books]() |[Link]()|
+
+
+# Supporting studies
+- [MarkDown](https://www.markdownguide.org/basic-syntax/)
