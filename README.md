@@ -19,7 +19,12 @@ This repository contains notes and solutions for various CS courses and assignme
 # API
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
-|OData |  |[Link]()|
+|OData|||
+
+# Active Directory
+|Subject  | Link/Resource  |Notes/Solutions|
+|--|--|--|
+|Attributes |[Link](http://www.kouti.com/tables/userattributes.htm)||
 
 
 # Supporting studies
