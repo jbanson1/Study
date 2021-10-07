@@ -36,6 +36,12 @@ This repository contains notes and solutions for various CS courses and assignme
 |--|--|--|
 |Basics ||[Link]()|
 
+# CI/CD
+|Subject  | Link/Resource  |Notes/Solutions|
+|--|--|--|
+|Basics ||[Link]()|
+|Octopus Deploy ||[Link]()|
+|Jenkins ||[Link]()|
 
 # Supporting studies
 - [MarkDown](https://www.markdownguide.org/basic-syntax/)
