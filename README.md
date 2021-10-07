@@ -31,6 +31,11 @@ This repository contains notes and solutions for various CS courses and assignme
 |--|--|--|
 |Attributes |[Link](http://www.kouti.com/tables/userattributes.htm)|[Link]()|
 
+# HTML
+|Subject  | Link/Resource  |Notes/Solutions|
+|--|--|--|
+|Basics ||[Link]()|
+
 
 # Supporting studies
 - [MarkDown](https://www.markdownguide.org/basic-syntax/)
