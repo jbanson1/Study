@@ -1,47 +1,43 @@
-# Comp Sci Study
+## Comp Sci Study
 This repository contains notes and solutions for various CS courses and assignments.
 
-|Subject  | Link/Resource  |Notes/Solutions|
-|--|--|--|
-|AWS Solutions Architect Associate|Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_AWS_Solutions_Architect)   |[Link]()|
-|Angular | Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_Angular) |[Link]()|
-
-# Cloud Studies
+## Cloud Studies
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
 |AWS Solutions Architect Associate|Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_AWS_Solutions_Architect) |[Link]()|
 
-# TypeScript
+## TypeScript
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
-|Angular | Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_Angular) |[Link]()|
+|Angular | Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_Angular) |[Notes](https://github.com/jbanson1/Study/blob/b7990e25e63296477657518bf5eaf880a7faa2bf/Angular_Studies/README.md)|
 
-# C#
+## C#
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
+|C#|[Link]()|[Notes](https://github.com/jbanson1/Study/blob/b7990e25e63296477657518bf5eaf880a7faa2bf/C%23/README.md)|
 |Coding Conventions |[Link](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)|[Link]()|
 
-# API
+## API
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
 |OData Conventions|[Link](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)|[Link]()|
 
-# Active Directory
+## Active Directory
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
 |Attributes |[Link](http://www.kouti.com/tables/userattributes.htm)|[Link]()|
 
-# HTML
+## HTML
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
 |Basics ||[Link]()|
 
-# CI/CD
+## CI/CD
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
 |Basics ||[Link]()|
 |Octopus Deploy ||[Link]()|
 |Jenkins ||[Link]()|
 
-# Supporting studies
+## Supporting studies
 - [MarkDown](https://www.markdownguide.org/basic-syntax/)
