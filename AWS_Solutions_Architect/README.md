@@ -1,7 +1,6 @@
 # ARCHITECTING FOR RELIABILITY  
 
 ## Defining Reliability and Resiliency
----------------------
 This refers to the ability to avoid and recover from failure. 
 An application is measured based upon how long it runs as expected for a percentage.
 
@@ -12,7 +11,6 @@ Deciding on how much availability your application requires depends mostly on th
 |Downtime Expected |3 days 15 hours|5 hours 45 mins|1 hour|5 mins|
 
 ## Traditional Applications
----------------------------
 Traditional applications that run on Windows or Linux would require to be run on an EC2 windows or Linux instance. To enable the application to be lifted and shifted without the need to alter the application code.
 
 A method adopted to help implement tradition applications on AWS is Loose Coupling. Just like when designing software loose coupling is used to embody each micro service.
@@ -25,12 +23,10 @@ Some of the benefits here are:
 
 
 ## Cloud Native Applications
-----------------------------
 This is refers to an application which is only available or depends on a resource in the cloud.
 Using this approach the architecture could be manipulated to get better performance but this would not improve the applications availability.
 
 ### Demo Example to find out the overall application Availability on a cloud service
------
 |Resource=|Lamda(Video processing)|S3(Web asset video storage)|DynamoDb(Database)|
 |--|--|--|--|
 |Availability|99.95|99.9|99.999|
@@ -59,7 +55,128 @@ multiply the failure rate from both regions
 
 subtract result from 100 = 99.999%
 
-# Service Limits
+## Service Limits
 These are seet to prevent a user from over indulging in too many EC2 instances in an attempt to get 100% availability.
 Best way to check the number for each user is to check the Trusted Advisor in order to find service limits.
 
+## Setting up AWS Environment 
+
+## Avoiding big bills 
+this can be done by using AWS Budgets there are 4 focuses:
+- Cost Budget 
+- Usage Budget
+- Reservation Budget
+- Savings Plans Budget
+
+AWS wil not stop the service 
+
+## AWS Identity Types
+- Root User Principal
+- IAM Principal
+
+
+# Building Virtual Private Cloud
+Virtual Private Cloud is a service that islotaed from other virtual networks. 
+
+## How to create the VPC
+Using the VPC wizard on the AWS Console it can be used to create a VPC, Nat Gateway,  An internet Gateway and public subnet or private subnets. 
+
+### Steps:
+1. Go to VPC Wizard
+2. Select Launch VPC
+3. Select the particular configuration you wish to use.
+4. In this scenario VPC with public and private subnets is selected.
+5. Fill out the required details ensuring that both the private and public subnets have the same IPv4 address & allocation zone. The allocation ID should be available when selected.
+6. Create VPC
+
+## How to Connect to a VPC
+There are 3 main methods to connect to a vpc:
+- NAT Gateway (Network Address Translation)
+In common man terms an additional layer preventing instances within the vpc from communicating with anything outside the VPC
+- Direct Connect/Direct Link
+Low-latency connection to AWS Region
+- Internet Gateway with VPN
+
+OR
+- Transic Gateway 
+This is more used to connect several VPC and can support Direct link.
+
+## Elastic IPs
+It is an IP address which can be given to any EC2 in a particullar region.
+using the command:
+"aws ec2 allocate address"
+You can allocate a public IP address to release it use the command. $0.12/per day
+"aws ec2 release-address"
+
+## Global Accelerator
+It is used to improve a users traffic re routing the user to the nearest healthiest endpoint. 
+
+## Subnet
+A subnet is a partition within a network(vpc) containing resources of a network
+
+### Public Subnet
+It has a route with and internet gateway as its target.
+
+### Private Subnet
+The Private Subnet mostly differs from the public subnet as it is only accessible to a those in a particular security group. The NAT Gateway sends traffic through the internet gateway 
+It can serve as a back up. By mirroring main services or by handling a percentage of the overall load/traffic.
+
+## Creating a Subnet
+1. Select on the sidebar subnet then on the page select create subnet.
+2. Fill in the required details (Pay attention to the availablility Zone ID) & specify the CIDR Block used for the particular VPC.
+3. The subnet created is going to be targetting the NAT Gateway. Which Public Subnets shouldnt be to change it select the subnet(& edit route table association).
+4. Change the route tableID  to the same as the public subnet created when using the VPC before. 
+5. Take note of all subnetID so as to help you launch ec2 instances or resources into your subnet.  
+
+# Launching Instances into a subnet
+using the CLI
+1. You can use the command
+"aws ec2 describe-subnets" or "aws ec2 describe-subnets --filters Name=cidr-block,Values="10.0.11.0/24"
+
+2. Next run the instance within the subnet using the command (The ami(amazon image ID) will need to change from reigon to reigon)
+"- aws ec2 run-instances --image-id ami-01d025118d8e760db --subnet-id subnet-0286d0d7f679ac737 --instance-type t3.micro --key-name ccnetkeypair"
+
+3. Copy the instance IP from the returned value and allocate the instance to an Elastic IP Address using the command shown below AWS-CLI.
+- Firstly allocate a an Elastic IP.
+- Associate the IP address using the command:
+"aws ec2 associate-address --instance-id i-036a00e797649cba5 --allocation-id eipalloc-0016c8c2129a23448"
+
+4. You can use the command below to view the address:
+- "aws ec2 describe-addresses"
+
+or 
+- "aws ec2 describe-addresses --allocation-ids {The allocation ID}"
+
+NB:AWS Shield prootect is used to prevent DDoS attacks
+
+# Transic Gateway
+----------
+Steps to connect a VPC to a Transit Gateway
+
+# CLI Commands (AWS-CLI)
+---------------------
+- aws ec2 allocate-address
+- aws ec2 release-address --allocation-id  eipalloc-0d47bf1294c84eaf4
+- aws ec2 describe-addresses
+
+- aws ec2 describe-subnets --filters Name=cidr-block,Values="10.0.11.0/24"
+- aws ec2 run-instances --image-id ami-01d025118d8e760db --subnet-id subnet-0286d0d7f679ac737 --instance-type t3.micro --key-name ccnetkeypair
+- aws ec2 allocate-address
+- aws ec2 associate-address --instance-id i-036a00e797649cba5 --allocation-id eipalloc-0016c8c2129a23448
+- aws ec2 terminate-instances --instance-ids i-2036a00e797649cba5
+- aws ec2 release-address --allocation-id eipalloc-0016c8c2129a23448
+
+- aws ec2 describe-nat-gateways
+- aws ec2 delete-nat-gateway --nat-gateway-id nat-0827194f97b639e0d
+- aws ec2 release-address --allocation-id eipalloc-0e196ad93b197e07f
+
+- aws ec2 create-transit-gateway
+- aws ec2 create-vpc --cidr-block 172.27.0.0/16
+- aws ec2 create-subnet --vpc-id vpc-06b95746480684294 --cidr-block 172.27.1.0/24 --availability-zone us-east-1a
+- aws ec2 create-transit-gateway-vpc-attachment --transit-gateway-id tgw-06966d6bb0e0487ed --vpc-id vpc-06b95746480684294 --subnet-ids subnet-001dd838706816ebb
+- aws ec2 create-vpc --cidr-block 172.28.0.0/16
+- aws ec2 create-subnet --vpc-id vpc-04d353c2a1c363eee --cidr-block 172.28.1.0/24 --availability-zone us-east-1a
+- aws ec2 create-transit-gateway-vpc-attachment --transit-gateway-id tgw-06966d6bb0e0487ed --vpc-id vpc-04d353c2a1c363eee --subnet-ids subnet-09aa923619d3a352b
+- aws ec2 search-transit-gateway-routes --transit-gateway-route-table-id tgw-rtb-01e158d45848e8522 --filters "Name=type,Values=static,propagated"
+- aws ec2 describe-transit-gateways
+- aws ec2 search-transit-gateway-routes --transit-gateway-route-table-id tgw-rtb-0ef0345df00016c92 --filters "Name=type,Values=static,propagated"
