@@ -1,5 +1,39 @@
 # ARCHITECTING FOR RELIABILITY  
 
+# AWS Core Services
+|Category | Service| Function|
+|--|--|--|
+|Compute|Elastic Compute Cloud| EC2 server instances run virtual versions of servers. They are reasource efficient and run almost instantly.|
+||Lambda|It is a serverless platform that runs code in response to events.|
+||Auto Scaling|Copies of running Ec2 instances can be defined as image templates and automatically launched when client demand is met.|
+||Elastic Load Balancer|Incoming traffic can be directedd to multiple servers to prevent a server from being overwhelmed.| 
+
+|Networking|||
+|--|--|--|
+||Virtual Private Cloud|Confirgurable network enviroments used to manage ec2 instances.|
+||Direct Connect|Can purchase fast and secure connection to AWS through a third party vendor.|
+||Route 53| It is an AWS DNS(Domain name System) that lets a user to manage domain registration, record admin, routing protocols and health checks|
+||Cloud Front|Is amazons (CDN) distributed |
+
+|Storage|||
+|--|--|--|
+
+
+||Database||
+|--|--|--|
+
+
+||Application Management||
+|--|--|--| 
+
+
+||Security & Identity||
+|--|--|--|
+
+
+||Application Integration||
+|--|--|--|
+
 ## Defining Reliability and Resiliency
 This refers to the ability to avoid and recover from failure. 
 An application is measured based upon how long it runs as expected for a percentage.
@@ -36,8 +70,19 @@ Using this approach the architecture could be manipulated to get better performa
 
 Advantages Of Cloud Native Applications:
 - Scalability
+ The infrastructure can easily be increased to meet larger demands.
+
 - Performance
+ The reliability and performance of the services are assured based upon the architecture used. 
+
 - Convenience
+ Services can easily be reached.
+
+- Cost
+ The cost for services used can easily be managed.
+
+- Elasticity
+ Using Cloudfront instances can be created automatically and removed when not in use.
 
 Disadvantages:
 - Your locked into the cloud 
@@ -64,6 +109,7 @@ Best way to check the number for each user is to check the Trusted Advisor in or
 ## Avoiding big bills 
 this can be done by using AWS Budgets there are 4 focuses:
 - Cost Budget 
+
 - Usage Budget
 - Reservation Budget
 - Savings Plans Budget
@@ -100,6 +146,16 @@ Low-latency connection to AWS Region
 OR
 - Transic Gateway 
 This is more used to connect several VPC and can support Direct link.
+
+## Cloud Platform Models
+- IAAS (Infastructer as a service)
+    A system of cloud computing that delivers computerized resources over the internet. The customer is incharge of keeping software and hardware upto date.
+
+- PAAS (Platform as a service)
+    A computing model where both hardware and software tools are provided over the internet. The user is not incharge of managing the software.
+
+- SAAS (Software as a service)
+    A computing model where all resources are provided over the internet.
 
 ## Elastic IPs
 It is an IP address which can be given to any EC2 in a particullar region.
@@ -150,11 +206,14 @@ or
 NB:AWS Shield prootect is used to prevent DDoS attacks
 
 # Transic Gateway
-----------
+
 Steps to connect a VPC to a Transit Gateway
 
+# Security Groups 
+
+
+
 # CLI Commands (AWS-CLI)
----------------------
 - aws ec2 allocate-address
 - aws ec2 release-address --allocation-id  eipalloc-0d47bf1294c84eaf4
 - aws ec2 describe-addresses
