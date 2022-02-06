@@ -59,7 +59,7 @@ Some of the benefits here are:
 
 ## The Cloud
 The cloud refers to software and systems provided over the internet instead of locally on a computer.
-AWS services are made available to users by identifying Regions => Availablity Zones(2+) => Local Zone(2+) OR Edge Groups (AWS CloudFront a little like an API)
+AWS services are made available to users by identifying Regions => Availablity Zones(2+) => Data Centers(2+) OR Edge Groups (AWS CloudFront a little like an API)
 
 ## Cloud Native Applications
 This is refers to an application which is only available or depends on a resource in the cloud.
@@ -136,7 +136,7 @@ An account with specific access to resources and services allowed by the root ac
 You can use IAM Federation to allow a user to connect to directory services using their Bussiness/Office acount it uses SAML.
 
 # S3( Simple Storage Service )
-A generic storage service used to stored objects (anything static i.e files that dont change) objects can be upto 5 Terabytes but there is unlimited storage. Objects are stored in buckets(folders). Buckets are universal as such names must be globally unique. The S3 With 11 9s ( 99.999999999 ) durability and 99.95-99.99 availability. 
+A generic storage service used to stored objects (anything static i.e files that dont change) objects can be upto 5 Terabytes but there is unlimited storage. Objects are stored in buckets(folders). Buckets are universal as such names must be globally unique, buckets however are stored regionally. The S3 With 11 9s ( 99.999999999 ) durability and 99.95-99.99 availability. 
 
 Example S3 URL :
 - https://<<bucket-name>>.S3.Region.amazonaws.com/<<KeyName>>
@@ -152,13 +152,78 @@ Cannot be used to run Operating systems
 
 ## Security
 - Server Side Encryption
-Data once stored within a bucket can be encrypted.
+Data once stored within a bucket can be encrypted. Or
+can be encrypted on the client side using AWS KMS(Key Management Service)
 
 - Access Control List (ACLs)
 Access can be grant to specific groups or individuals.
 
 - S3 Bucket Policies
 With S3 Policies you can specify what actions are allowed or denied.
+
+## S3 Tiers
+- S3 Standard IA (Infrequently Accessed)  
+Rapid Access,Pay to access data and good for long term storage or backup.
+
+- S3 one Zone-IA
+Objects or buckets only available in one Availability Zone.
+
+## S3 Intelligent Tiering 
+Moves data to the most cost effective tier based on how frequent each object is accessed
+
+## Glacier
+Used for long term archiving and users pay each time they access data.
+
+### Types or Options
+- Glacier
+Provides long term data archiving with retrieval times ranging from 1-12 hours.
+
+- Glacier Deep Archive
+Provides long term data archiving with retrieval times default to 12 hours.
+
+## Lifecycle Management
+Moving objects from one tier to another to minimize storage cost you can use versioning and create rules for one object or all objects within a bucket. Lifecycle management automates moving objects between different storage tiers. Can be applied to current or 
+older versions.
+
+## S3 Object Lock
+It is used to store objects using the WORM (Write Once Read Many) Model.
+
+MODES:
+- Governence Mode
+Users can not overwrite or delete a version or alter its lock settings unless they have special permissions.
+
+- Compliance Mode
+Nobody can overwrite or delete the object. Unless till the retention period is complete. Retention period is a period 
+set to protect an object version. Legal holds however prevent an object version from being overwritten or deleted.
+Legal holds can be placed and removed only by users with S3:PutObjectLegalHold permission. 
+
+## S3 Encryption
+
+1. Encryption in transit
+     - SSL/TLS
+     - HTTPS
+
+2. Encryption at Rest: Server-Side Encryption
+Can be done using the console or through bucket policy.
+    - SSE-S3: S3 Manage Keys using 256 bit encryption
+
+    - SSE-KMS: AWS Key Management Service- managed keys
+    
+
+    - SSE-C: Customer provided keys
+
+3. Encryption at Rest: Client-Side Encryption
+Client encrypts object before uploading to S3.
+
+4. You can also implement encryption using bit bucket policy. Where the put request header contains the type of encryption
+acceptable.
+
+## Optomizing S3 Performance
+
+1. Prefix
+Using prefixes oor creating subdirectories can increase requests per seconds.
+
+2. 
 
 # Building Virtual Private Cloud
 Virtual Private Cloud is a service that islotaed from other virtual networks. 
