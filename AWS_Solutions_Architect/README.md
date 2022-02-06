@@ -2,39 +2,6 @@
 
 ## ARCHITECTING FOR RELIABILITY  
 
-## AWS Core Services
-|Category | Service| Function|
-|--|--|--|
-|Compute|Elastic Compute Cloud| EC2 server instances run virtual versions of servers. They are reasource efficient and run almost instantly.|
-||Lambda|It is a serverless platform that runs code in response to events.|
-||Auto Scaling|Copies of running Ec2 instances can be defined as image templates and automatically launched when client demand is met.|
-||Elastic Load Balancer|Incoming traffic can be directedd to multiple servers to prevent a server from being overwhelmed.| 
-
-|Networking|||
-|--|--|--|
-||Virtual Private Cloud|Confirgurable network enviroments used to manage ec2 instances.|
-||Direct Connect|Can purchase fast and secure connection to AWS through a third party vendor.|
-||Route 53| It is an AWS DNS(Domain name System) that lets a user to manage domain registration, record admin, routing protocols and health checks|
-||Cloud Front|Is amazons (CDN) distributed |
-
-|Storage|||
-|--|--|--|
-
-
-||Database||
-|--|--|--|
-
-
-||Application Management||
-|--|--|--| 
-
-
-||Security & Identity||
-|--|--|--|
-
-
-||Application Integration||
-|--|--|--|
 
 ## Defining Reliability and Resiliency
 This refers to the ability to avoid and recover from failure. 
@@ -139,7 +106,7 @@ You can use IAM Federation to allow a user to connect to directory services usin
 A generic storage service used to stored objects (anything static i.e files that dont change) objects can be upto 5 Terabytes but there is unlimited storage. Objects are stored in buckets(folders). Buckets are universal as such names must be globally unique, buckets however are stored regionally. The S3 With 11 9s ( 99.999999999 ) durability and 99.95-99.99 availability. 
 
 Example S3 URL :
-- https://<<bucket-name>>.S3.Region.amazonaws.com/<<KeyName>>
+- https://bucket-name.S3.Region.amazonaws.com/KeyName
 - https://JoesRustyBucket.S3.us-east-1.amazonaws.com/Selfie
 
 It works off of a key value stpred which is the name of the object.
@@ -208,7 +175,7 @@ Can be done using the console or through bucket policy.
     - SSE-S3: S3 Manage Keys using 256 bit encryption
 
     - SSE-KMS: AWS Key Management Service- managed keys
-    
+
 
     - SSE-C: Customer provided keys
 
@@ -315,6 +282,53 @@ Steps to connect a VPC to a Transit Gateway
 
 # Security Groups 
 
+
+## AWS Core Services
+|Category | Service| Function|
+|--|--|--|
+|Compute|Elastic Compute Cloud| EC2 server instances run virtual versions of servers. They are reasource efficient and run almost instantly.|
+||Lambda|It is a serverless platform that runs code in response to events.|
+||Auto Scaling|Copies of running Ec2 instances can be defined as image templates and automatically launched when client demand is met.|
+||Elastic Load Balancer|Incoming traffic can be directedd to multiple servers to prevent a server from being overwhelmed.| 
+
+|Networking|||
+|--|--|--|
+||Virtual Private Cloud|Confirgurable network enviroments used to manage ec2 instances.|
+||Direct Connect|Can purchase fast and secure connection to AWS through a third party vendor.|
+||Route 53| It is an AWS DNS(Domain name System) that lets a user to manage domain registration, record admin, routing protocols and health checks|
+||Cloud Front|Is amazons (CDN) distributed |
+
+|Storage|||
+|--|--|--|
+||Simple Storage Service (S3)|
+||S3 Glacier|
+||Elastic Block Store (EBS)|
+||Storage Gateway|
+
+||Database||
+|--|--|--|
+||Relational Database Service (RDS)|
+||Dynamo DB|
+
+||Application Management||
+|--|--|--|
+||CloudWatch|
+||CloudFormation|
+||CloudTrail|
+||Config|
+
+||Security & Identity||
+|--|--|--|
+||Identity Access Management(IAM)|
+||Key Management Service (KMS)|
+||Directory Service|
+
+||Application Integration||
+|--|--|--|
+||Simple Notification Service (SNS)|
+||Simple WorkFlow (SWF)|
+||Simple Queue Service (SQS)|
+||API Gateway|
 
 
 # CLI Commands (AWS-CLI)
