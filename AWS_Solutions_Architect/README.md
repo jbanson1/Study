@@ -1,6 +1,8 @@
-# ARCHITECTING FOR RELIABILITY  
+# AWS Certified Solutions Architect - Associate (SAA-C02)
 
-# AWS Core Services
+## ARCHITECTING FOR RELIABILITY  
+
+## AWS Core Services
 |Category | Service| Function|
 |--|--|--|
 |Compute|Elastic Compute Cloud| EC2 server instances run virtual versions of servers. They are reasource efficient and run almost instantly.|
@@ -55,6 +57,9 @@ Some of the benefits here are:
 -It is scalable the services that require more Resources can be altered individually. For instance a microservice could be given more processing power or more memory to help other instances perform better.
 - The elastic Load balancer can proxy a user to another instance in the case where a EC2 instance goes down.
 
+## The Cloud
+The cloud refers to software and systems provided over the internet instead of locally on a computer.
+AWS services are made available to users by identifying Regions => Availablity Zones(2+) => Local Zone(2+) OR Edge Groups (AWS CloudFront a little like an API)
 
 ## Cloud Native Applications
 This is refers to an application which is only available or depends on a resource in the cloud.
@@ -101,7 +106,7 @@ multiply the failure rate from both regions
 subtract result from 100 = 99.999%
 
 ## Service Limits
-These are seet to prevent a user from over indulging in too many EC2 instances in an attempt to get 100% availability.
+These are set to prevent a user from over indulging in too many EC2 instances in an attempt to get 100% availability.
 Best way to check the number for each user is to check the Trusted Advisor in order to find service limits.
 
 ## Setting up AWS Environment 
@@ -114,12 +119,46 @@ this can be done by using AWS Budgets there are 4 focuses:
 - Reservation Budget
 - Savings Plans Budget
 
-AWS wil not stop the service 
+AWS wil not stop the service when you dont turn it off!!!!!!
 
 ## AWS Identity Types
-- Root User Principal
-- IAM Principal
+- Root User Principal:
+This is created when an aws account is created. From this account IAM accounts can be created. Policies and privilidges are created,granted or taken away from this account. Once created enable MFA(Multi Factor Identifications). Create admin groups and assign appropriate permissions(i.e Developers require different permissions to Accountants). 
 
+Policiy Documents:
+Written using JSON(Java Script Object Notation) the document is made up of 
+3 main parts EAR(Effcts.Action.Resources).
+
+/-Take a look at a few policy docs before test-/
+
+- IAM (Identity Access Management) Principal:
+An account with specific access to resources and services allowed by the root account. With IAM policies the root account can manage permissions this is done to ensure least-privilidge permissions. IAM is universal.
+You can use IAM Federation to allow a user to connect to directory services using their Bussiness/Office acount it uses SAML.
+
+# S3( Simple Storage Service )
+A generic storage service used to stored objects (anything static i.e files that dont change) objects can be upto 5 Terabytes but there is unlimited storage. Objects are stored in buckets(folders). Buckets are universal as such names must be globally unique. The S3 With 11 9s ( 99.999999999 ) durability and 99.95-99.99 availability. 
+
+Example S3 URL :
+- https://<<bucket-name>>.S3.Region.amazonaws.com/<<KeyName>>
+- https://JoesRustyBucket.S3.us-east-1.amazonaws.com/Selfie
+
+It works off of a key value stpred which is the name of the object.
+An object could also have metadata and version ID. The value of an object is the data itself which is a sequence of bytes.
+S3 is designed for frequent access and is suitable for most workloads.
+There is tiered storage for different use cases. There is also lifeCycle management to move items to a different tier to make management more cost effective or delete obsolete objects.
+There is versioning where all instances of the object are stored and cant be deleted. Once versioning is turned on it can not be stopped just suspended.
+
+Cannot be used to run Operating systems
+
+## Security
+- Server Side Encryption
+Data once stored within a bucket can be encrypted.
+
+- Access Control List (ACLs)
+Access can be grant to specific groups or individuals.
+
+- S3 Bucket Policies
+With S3 Policies you can specify what actions are allowed or denied.
 
 # Building Virtual Private Cloud
 Virtual Private Cloud is a service that islotaed from other virtual networks. 
