@@ -192,7 +192,7 @@ Using prefixes oor creating subdirectories can increase requests per seconds.
 
 2. 
 
-# Building Virtual Private Cloud
+## Building Virtual Private Cloud
 Virtual Private Cloud is a service that islotaed from other virtual networks. 
 
 ## How to create the VPC
@@ -255,7 +255,7 @@ It can serve as a back up. By mirroring main services or by handling a percentag
 4. Change the route tableID  to the same as the public subnet created when using the VPC before. 
 5. Take note of all subnetID so as to help you launch ec2 instances or resources into your subnet.  
 
-# Launching Instances into a subnet
+## Launching Instances into a subnet
 using the CLI
 1. You can use the command
 "aws ec2 describe-subnets" or "aws ec2 describe-subnets --filters Name=cidr-block,Values="10.0.11.0/24"
@@ -276,12 +276,35 @@ or
 
 NB:AWS Shield prootect is used to prevent DDoS attacks
 
-# Transic Gateway
+## Transic Gateway
 
 Steps to connect a VPC to a Transit Gateway
 
-# Security Groups 
+## Security Groups 
 
+# Route 53
+
+# Elastic Load Balancing (ELB)
+
+# Monitoring
+
+# High Availablity and Scaling
+
+# Decoupling Workflows
+
+# Big Data
+
+# Serverless Architecture 
+
+# Security
+
+# Automation
+
+# Caching
+
+# Governance
+
+# Migration
 
 ## AWS Core Services
 |Category | Service| Function|
