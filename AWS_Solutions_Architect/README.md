@@ -175,7 +175,7 @@ Can be done using the console or through bucket policy.
     - SSE-S3: S3 Manage Keys using 256 bit encryption
 
     - SSE-KMS: AWS Key Management Service- managed keys
-
+    Comes with a quota which currently cannot be edited. It includes all uploads and downloads.
 
     - SSE-C: Customer provided keys
 
@@ -191,6 +191,15 @@ acceptable.
 Using prefixes oor creating subdirectories can increase requests per seconds.
 
 2. 
+
+### Uploads
+1. Multipart Uploads:
+
+Enables the user to split an object into parts and upload the parallel. It is required for objects larger than 5GB and recommended for files over 100 MB.(Increases Efficiency)
+
+### Downloads
+
+1. 
 
 # Building Virtual Private Cloud
 Virtual Private Cloud is a service that islotaed from other virtual networks. 
