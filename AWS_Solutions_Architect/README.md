@@ -11,7 +11,7 @@ Deciding on how much availability your application requires depends mostly on th
 
 |Application Availability|99.0|99.9|99.99|99.999|
 |--|--|--|--|--|
-|Downtime Expected |3 days 15 hours|5 hours 45 mins|1 hour|5 mins|
+|Downtime Expected |3 days 15 hours|5 hours 45 mins|1 hour|5 mins|a
 
 ## Traditional Applications
 Traditional applications that run on Windows or Linux would require to be run on an EC2 windows or Linux instance. To enable the application to be lifted and shifted without the need to alter the application code.
@@ -192,6 +192,7 @@ Using prefixes oor creating subdirectories can increase requests per seconds.
 
 2. 
 
+<<<<<<< HEAD
 ### Uploads
 1. Multipart Uploads:
 
@@ -202,6 +203,9 @@ Enables the user to split an object into parts and upload the parallel. It is re
 1. 
 
 # Building Virtual Private Cloud
+=======
+## Building Virtual Private Cloud
+>>>>>>> 015318558cbe4bab603fe5297d0c7489c344be4c
 Virtual Private Cloud is a service that islotaed from other virtual networks. 
 
 ## How to create the VPC
@@ -264,7 +268,7 @@ It can serve as a back up. By mirroring main services or by handling a percentag
 4. Change the route tableID  to the same as the public subnet created when using the VPC before. 
 5. Take note of all subnetID so as to help you launch ec2 instances or resources into your subnet.  
 
-# Launching Instances into a subnet
+## Launching Instances into a subnet
 using the CLI
 1. You can use the command
 "aws ec2 describe-subnets" or "aws ec2 describe-subnets --filters Name=cidr-block,Values="10.0.11.0/24"
@@ -285,12 +289,35 @@ or
 
 NB:AWS Shield prootect is used to prevent DDoS attacks
 
-# Transic Gateway
+## Transic Gateway
 
 Steps to connect a VPC to a Transit Gateway
 
-# Security Groups 
+## Security Groups 
 
+# Route 53
+
+# Elastic Load Balancing (ELB)
+
+# Monitoring
+
+# High Availablity and Scaling
+
+# Decoupling Workflows
+
+# Big Data
+
+# Serverless Architecture 
+
+# Security
+
+# Automation
+
+# Caching
+
+# Governance
+
+# Migration
 
 ## AWS Core Services
 |Category | Service| Function|
