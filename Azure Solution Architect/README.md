@@ -131,8 +131,8 @@ Choosing a region close to users to reduce latency.
 Not all features are available in all regions. New regions 
 would have more features.
 
--Pricing:<br>
-May vary deoending on the region. <br>
+- Pricing:<br>
+May vary depending on the region. <br>
 
 Each region is paired so if one region fails another region would take over.
 
