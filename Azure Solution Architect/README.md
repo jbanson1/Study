@@ -65,9 +65,8 @@ Refers to how you manage different cloud resources
 How you interact with the resources
 - Portal
 - CLI
-- APIs<br>
----------------------------------------------------
----------------------------------------------------
+- APIs
+
 ### Cloud Service Models
 ---
 #### Infrastructure As A Service
@@ -81,9 +80,6 @@ integrated manner.(i.e.Windows 10)
 Users are not responsible for the hardware or software as licences and services 
 are maintained by Azure.
 Can only be accessed over the internet.(i.e. Email)
-
------------------------------------------------------
------------------------------------------------------
 
 ### Cloud Architect Models
 ---
@@ -113,8 +109,6 @@ Is a combination of both private and public cloud but can be very complicated.
 |Allows appliactions and data to span between both public and private cloud||
 |Alleviate CapEx investments||
 
------------------------------------------------------
------------------------------------------------------
 # Azure Architecture
 ---
 ## Regions<br>
@@ -194,12 +188,16 @@ It is a way of relabeling.
 Can use taggin to identify groups for billing purposes.
 
 # Compute 
+## Virtual Machines
 
 # Networking 
 
+
 # Storage
 
+
 # Database
+
 
 # Athuentication and Authorization 
 
