@@ -188,6 +188,7 @@ Can use tagging to identify groups for billing purposes.
 
 # Compute 
 ## Virtual Machines (IAAS)
+A virtual machine is a computer file, typically called an image, that behaves like an actual computer.
 - A computer or server accessed to exclusively 
 - You don't buy, own, or control any hardware.
 - Virtual Machines are an Iaas Offering, Where you are responsible for the entire machine.
