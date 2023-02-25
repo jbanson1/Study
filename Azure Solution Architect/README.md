@@ -188,7 +188,6 @@ Can use tagging to identify groups for billing purposes.
 
 # Compute 
 ## Virtual Machines (IAAS)
-A virtual machine is a computer file, typically called an image, that behaves like an actual computer.
 - A computer or server accessed to exclusively 
 - You don't buy, own, or control any hardware.
 - Virtual Machines are an Iaas Offering, Where you are responsible for the entire machine.
@@ -335,10 +334,12 @@ Is a high level load balancer which works on the http request of the traffic, in
 It is a distributed network of servers that can deliver web content close to users.
 To minimize latency.
 
-- Cache:<br> Temporary copies of original files. to optimize speed for an application
+- Cache:<br>
+  Temporary copies of original files. to optimize speed for an application
   till the copy expires.
 
-- Origin Server: <br> The original location of the files such as a web application.
+- Origin Server: <br>
+  The original location of the files such as a web application.
 
 ### Benefits:
 - Better Performance: <br>
@@ -356,14 +357,124 @@ They don't go over the internet. Are very reliable and low latency.
 It is private straight to Azure.
 
 # Storage
-# Database
+## BLOB
+Storage for anything and are usually inside a container, which is inside a storage account.
+
+### BLOB types
+- Block: <br>
+  Store text and binary data up to 4.7tb. Made up of individually managed blocks of data.
+
+- Append: <br>
+  Block BLOBS that are optimized for append operations.Works well for logging where data is constantly appended.
+
+- Page: <br>
+  Store files up to 8TB. Any part of the file could be accessed at any time, for example a virtual hard drive.
+
+  ### Pricing Tiers
+  - Hot: Frequently accessed files. Lower access times and higher access costs.
+  - Cool: Lower storage costs and higher access times. Data remains here for at least 30 days.
+  - Archive: Lowest Cost and highest access times.
+
+## Disk 
+It is what you would attach to a virtual machine to imitate whether it has HDD storage, SSD, Premium SSD or Ultra Disk. This enables you to run simulations according to the hardware requirements.
+
+## File 
+Mitigating on premises file storage as files are highly available and resilient.
+As well as easy to share
+
+## Archive
+A cheap way to store Large amounts of data
+
+## Storage Redundancy 
+Ensures that data is spread amongst several systems to reduce the amount of failure.
+Usually data has 3 copies either in single/multiple regions or single/multiple zones.
+
+## Moving Data
+Different solutions based on 
+- Transfer Frequency
+- Data Size
+- Network Bandwidth
+  
+### AzCopy
+It is a command line Utility used to help with the transfer of data.
+#### 1. Transfer blobs and Azure files
+#### 2. Useful for scripting data transfers 
+
+### Storage Explorer
+ It is a GUI
+ #### 1. Downloaded application.
+ #### 2. User friendly gui. Drag and drop interaction.
+ #### 3. Can move all storage account data types.
+
+ ### Azure File Sync
+ Synchronize Azure Files with On-Premises File Servers.
+
+## Additional Migration Options
+### Azure Data Box
+Scenario Lots of data to transfer with limited bandwidth.
+A physical box sent to user location to place data on.
+It is encrypted. The data is then placed on your storage account.
+
+### Azure Migrate 
+Focuses on non azure resources such as servers, databases and applications.
+To be places on Azure.
+- Example: <br>
+  Migrating a data center to Azure or a VM .
+
+## Premium Performance Options
+All work with SSD 
+
+| **Type Of Storage Account** | **Supported Storage Services** | **Redundancy Options** |
+|-------|-------|-------|
+| **Premium block   blobs** |   Blobs Storage    |   LRS/ZRS    |
+| **Premium page blobs** |   Page blobs only (IAAS disks)    |    LRS   |
+| **Premium File shares** |   Azure Files    |   LRS/ZRS    |
+
+# Database (Supplemental)
 # Authentication and Authorization
+## Identity Services
+- Authentication: Confirming the Identity of a user.
+- Authorization: comes after authorization and asks whether the particular user is allowed access.
+  
+## Azure Active Directory 
+- Tenant: <br>The Tenant represents the organization.
+- Dedicated AAD:<br> The tenant is a dedicated instance of AAD that an organization receives when signing up for Azure.
+- Separate: <br>Each Tenant is distinct and completely separate from other AAD tenants.
+- One User - one Tenant:<br> Each user in Azure can only belong to a single tenant. Users can be guests to other tenants. 
+
+## Zero Trust 
+All users are assumed untrustworthy unless proven otherwise.
+- Trust proven by identity 
+- Least privilege access - Just enough permissions to perform their Job.
+- Regardless of location (trusted/Untrusted networks)
+
+## MFA
+Using at least 2 ways to log yourself in.
+
+## Conditional Access
+When user meets a set of conditions their access may require an action like seeking MFA .
+
+## Passwordless Authentication
+Increase convenience whiles staying secure.
+
+- Microsoft Authenticator App
+- WIndows Hello (Facial Recognition)
+- FIDO2 Security Key(USB key)
+
+## External guest Access
+### 1. Create a separate organisation account for an external user
+### 2. Invite guest to azure tenant as an external collaborator
+
+## Azure Active Directory Domain Services
+
+## Single Sign-on
+
+
 # Azure Solutions (Supplemental)
 # Security
 # Monitoring and management
 # Pricing
 # Support (Supplemental)
-# Authentication and Authorization  
 
 
 ### Cloud Shell commands
