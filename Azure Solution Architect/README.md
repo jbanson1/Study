@@ -1,5 +1,5 @@
 # Azure Notes
-
+# Fundamentals 
 # Cloud Concepts
 
 ### High availability:
