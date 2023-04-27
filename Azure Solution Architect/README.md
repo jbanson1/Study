@@ -472,10 +472,59 @@ Increase convenience whiles staying secure.
 
 # Azure Solutions (Supplemental)
 # Security
+## Defence in depth
+- How Microsoft provides different layers of security for cloud infrastructure.
+
+### Securing Network Connectivity
+#### Firewall
+- Set of rules that define what kind of traffic can access a device or service behind it.
+- Firewalls come as hardware and software versions. They can suit any type and size of network.
+- It is the critical part of any network 
+
+#### Azure provides DDoS Protection Services <br>
+Enabling several devices to connect to a a website inorder to make several requests and Detects DDoS attacks. This is done with no downtime.
+
+#### Network Security Group (NSG)
+- A set of rules attachted to a virtual network, subnet or network interface. 
+
+### Public and Private Endpoints
+#### Public Endpoints = Publicly Reachable PaaS Services
+##### Service Endpoint
+Allows you to connect privately connect VNet subnet to Azure Paas Services. <br>
+Direct Connection from subnet to Azure PaaS services. <br>
+Connects over Microsofts private backbone (not over public internet)
+
+##### Limitations of Service Endpoints
+Provides secure access to azure VNets only. Not truly private. Service endpoints provide access to an entire service.
+
+
+##### Private Endpoint
+Provides a private connection to a specific instance of a service. It provides truly private connections over connected networks.You can completed disable all public exposure.
+
+### Microsoft Defender for Cloud (Formely Azure Security Center)
+- Define Policies <br>
+Set up Policies for Azure to monitor resources from. A policy is a set of rules used to evaluate a resource. User predefined policies or create your own.
+
+- Protect Resources <br>
+Actively protect your resources through monitoring your policies and their outcomes.
+
+- Respond <br>
+Respond to any security alerts. Investigate all of them then define new policies to account for alert.
+
+### Key Vault (Supplemental)
+
+### Azure Information Protection 
+
+### Microsoft defender for Identity
+
+### Azure Sentinel
+
+### Azure dedicated host
+
+
 # Monitoring and management
 # Pricing
 # Support (Supplemental)
 
 
 ### Cloud Shell commands
-
