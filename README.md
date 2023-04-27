@@ -2,13 +2,16 @@
 This repository contains notes and solutions for various CS courses and assignments.
 
 ## Cloud Studies
+### AWS
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
 |AWS Solutions Architect Associate|Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_AWS_Solutions_Architect) |[Link]()|
 
+
+### Azure
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
-|Azure Solutions Architect Associate|aCloud Gurus & [Books]| |[Link](https://github.com/jbanson1/Study/tree/main/Azure%20Solution%20Architect)|
+|Azure Solutions Architect Associate|aCloud Gurus & [Books]|  |[Link](https://github.com/jbanson1/Study/tree/main/Azure%20Solution%20Architect)|
 
 ## TypeScript
 |Subject  | Link/Resource  |Notes/Solutions|
