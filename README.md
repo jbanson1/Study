@@ -11,7 +11,7 @@ This repository contains notes and solutions for various CS courses and assignme
 ### Azure
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
-|Azure Solutions Architect Associate|aCloud Gurus & [Books]|  |[Link](https://github.com/jbanson1/Study/tree/main/Azure%20Solution%20Architect)|
+|Azure Solutions Architect Associate|aCloud Gurus & [Books]|  |[Link](https://github.com/jbanson1/Study/tree/main/AWS_Solutions_Architect)|
 
 ## TypeScript
 |Subject  | Link/Resource  |Notes/Solutions|
