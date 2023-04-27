@@ -6,6 +6,10 @@ This repository contains notes and solutions for various CS courses and assignme
 |--|--|--|
 |AWS Solutions Architect Associate|Pluralsight & [Books](https://github.com/jbanson1/Study/blob/46f8146136a681af3d280208f22e0290b0bd9ead/Book_List_AWS_Solutions_Architect) |[Link]()|
 
+|Subject  | Link/Resource  |Notes/Solutions|
+|--|--|--|
+|(Azure Solutions Architect Associate|aCloud Gurus & [Books]https://github.com/jbanson1/Study/tree/main/Azure%20Solution%20Architect) |[Link]()|
+
 ## TypeScript
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
