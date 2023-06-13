@@ -482,17 +482,17 @@ Increase convenience whiles staying secure.
 - It is the critical part of any network 
 
 #### Azure provides DDoS Protection Services <br>
-Enabling several devices to connect to a a website inorder to make several requests and Detects DDoS attacks. This is done with no downtime.
+Enabling several devices to connect to a a website in order to make several requests and Detects DDoS attacks. This is done with no downtime.
 
 #### Network Security Group (NSG)
-- A set of rules attachted to a virtual network, subnet or network interface. 
+- A set of rules attached to a virtual network, subnet or network interface. 
 
 ### Public and Private Endpoints
 #### Public Endpoints = Publicly Reachable PaaS Services
 ##### Service Endpoint
 Allows you to connect privately connect VNet subnet to Azure Paas Services. <br>
 Direct Connection from subnet to Azure PaaS services. <br>
-Connects over Microsofts private backbone (not over public internet)
+Connects over Microsoft's private backbone (not over public internet)
 
 ##### Limitations of Service Endpoints
 Provides secure access to azure VNets only. Not truly private. Service endpoints provide access to an entire service.
@@ -501,7 +501,7 @@ Provides secure access to azure VNets only. Not truly private. Service endpoints
 ##### Private Endpoint
 Provides a private connection to a specific instance of a service. It provides truly private connections over connected networks.You can completed disable all public exposure.
 
-### Microsoft Defender for Cloud (Formely Azure Security Center)
+### Microsoft Defender for Cloud (Formerly Azure Security Center)
 - Define Policies <br>
 Set up Policies for Azure to monitor resources from. A policy is a set of rules used to evaluate a resource. User predefined policies or create your own.
 
@@ -523,6 +523,58 @@ Respond to any security alerts. Investigate all of them then define new policies
 
 
 # Monitoring and management
+
+## Governance: 
+## Azure policy:<br>
+Is used to create policies in Azure. It is a set of rules created to assure all resources abide by the overall policy.
+### Role Based Access Control:
+- Defines which users have access to specific resources.
+- Minimum access necessary to resources
+- Target specific user cases
+  
+### Locks
+- Assigning: Locks can be assigned to a subscription, resource group or resource.
+- Types: Locks are of 2 type. Delete, where you can't delete the locked object and read only where you cant make any changes
+- Lock needs to be removed before any actions can be taken on an object.
+
+### Blueprints:
+They are templates for creating standard Azure environments.
+
+## Azure Monitor
+It helps users identify services or resources that aren't work 100% capacity using collected telemetry.
+- Log analytics: Lets the user analyse logs. in order to query a user would need to use Kusto Query Language (KQL)
+- Application insights: Give a user insights into an application. Works with web apps only.
+- Azure Monitor Alerts: Provides notifications in response to unexpected events. Comprises of an Alert rule made up of<br>
+   {
+1) Monitored Resource:VM
+2) Monitored Telemetry:CPU Utilization
+3) Conditions to Trigger the Alert: > 90% for 5 minutes
+4) Assigned Severity: LEvel 2 - Warning <br>
+ }<br>
+Action Group = The actions to take place once an alert is triggered.
+
+## Azure Service Health
+Comprises of:
+- Dashboard highlighting resources and issues  affecting them.
+- Custom Alerts: Enabling users to get notified of any outages planned or unplanned.
+- Real time tracking to track any issues.
+- Free service.
+
+## Compliance
+### GDPR
+### ISO Standard
+### NIST
+
+### Azure compliance manager 
+provides recommendations with the above
+It can :<br>
+- can provides tasks 
+- provides a compliance score 
+- Secure storage to upload documents to prove compliance 
+- reports provides reports to provide the compliance.
+
+
+
 # Pricing
 # Support (Supplemental)
 
