@@ -397,14 +397,14 @@ Different solutions based on
   
 ### AzCopy
 It is a command line Utility used to help with the transfer of data.
-#### 1. Transfer blobs and Azure files
-#### 2. Useful for scripting data transfers 
+1) Transfer blobs and Azure files
+2) Useful for scripting data transfers 
 
 ### Storage Explorer
  It is a GUI
- #### 1. Downloaded application.
- #### 2. User friendly gui. Drag and drop interaction.
- #### 3. Can move all storage account data types.
+ 1) Downloaded application.
+ 2) User friendly gui. Drag and drop interaction.
+ 3) Can move all storage account data types.
 
  ### Azure File Sync
  Synchronize Azure Files with On-Premises File Servers.
@@ -462,8 +462,8 @@ Increase convenience whiles staying secure.
 - FIDO2 Security Key(USB key)
 
 ## External guest Access
-### 1. Create a separate organisation account for an external user
-### 2. Invite guest to azure tenant as an external collaborator
+ 1) Create a separate organisation account for an external user
+ 2) Invite guest to azure tenant as an external collaborator
 
 ## Azure Active Directory Domain Services
 
@@ -573,10 +573,53 @@ It can :<br>
 - Secure storage to upload documents to prove compliance 
 - reports provides reports to provide the compliance.
 
+## Privacy 
+### Azure Privacy 
+- Azure Information Protection
+Classify, label and protect data based on data sensitivity.
 
+- Azure Policy
+Define and enforce rules to ensure privacy and external regulations.
+
+- Guides
+  Use guides on Azure to respond and comply with GDPR privacy requests.
+
+- Compliance Manager
+  
+### Trust 
+Trust center and service trust portal
+
+### Azure Arc
+A centralized governance and management tool for on-premises and multi-cloud computing resources.
+
+- Benefits:
+1) Manage Azure and non azure resources in the same place
+2) Mange non-azure kubernetes clusters
+3) Deploy Azure-managed database services to non-Azure locations.
+4) Manage and protect non-Azure servers.
+5) Apply Azure governance.
+6) Deploy Azure serverless services to non-azure hardware.
 
 # Pricing
-# Support (Supplemental)
+## Subscription
+Every resource belongs to a subscription. An account can have multiple subscriptions.
+- Billing Admins Control Costs
+- Management groups help keep track of many subscriptions in an account
 
+## Cost Management
+Use Azure cost management to keep costs low and optimize resources.
 
-### Cloud Shell commands
+## Pricing Factors
+1) Resource size 
+2) Resource type
+3) Location of the service 
+4) and bandwidth and zones used 
+   
+There are 2 calculators for predicting cost Azure pricing calculator and Total Cost of Ownership Calculator
+
+## Best practices
+1) Use spending limits
+2) Quotas for services 
+3) tags to order resources
+4) reserve instances to manage costs and 
+
