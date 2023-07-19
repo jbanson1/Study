@@ -623,3 +623,4 @@ There are 2 calculators for predicting cost Azure pricing calculator and Total C
 3) tags to order resources
 4) reserve instances to manage costs and 
 
+# PASSED AZ-900 AZURE FUNDAMENTALS -> AZ-104 -> AZ-204
