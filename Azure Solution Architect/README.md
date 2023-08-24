@@ -1,5 +1,5 @@
 # Azure Notes
-# Fundamentals 
+# AZ-900 Fundamentals 
 # Cloud Concepts
 
 ### High availability:
@@ -623,4 +623,112 @@ There are 2 calculators for predicting cost Azure pricing calculator and Total C
 3) tags to order resources
 4) reserve instances to manage costs and 
 
-# PASSED AZ-900 AZURE FUNDAMENTALS -> AZ-104 -> AZ-204
+# PASSED AZ-900 AZURE FUNDAMENTALS -> AZ-104
+# AZ-104
+# Azure Admin
+## Understanding Resource Manager
+The orchestration layer that manages resources in the Azure Cloud.
+# Governance and compliance
+Managing subscriptions 
+
+Using Managing Groups 
+
+## Azure policy 
+- Policy Definition:<br>
+Defines evalutaion criteria for compliance and defines the actions that take place.
+
+- Policy assignment:<br>
+The scope at which we will assign our policy. The scope could be management group,
+subscription,resource group,or resource.
+
+- Initiative Definition 
+A collection of policies that are tailored to achieving a singular high-level goal together. 
+
+## Tagging Resources
+The are a name value pair.
+- Tags are not inherited.
+- Resources can have 50 tags at a time.
+
+## Locking and moving resources
+### Locks
+- Allows you to override permissions to resources
+- You can lock subscriptions, resource groups, or resources.
+- lock restrictions apply to all users and roles
+
+### Lock types
+- Read Only: <br> 
+Allows users to read a resource, but they cannot delete or update.
+
+- Cannot delete: <br>
+Allows users to read a resource and modify, but they cannot delete or update.
+
+- Locks are inherited from the parent scope
+
+### Moving Resources
+The process of moving resources that are contained in a specific place in Azure
+to another place.
+
+- If a resource is locked it then prevents the resource from being moved.
+
+## Managing Azure Cost
+### What Impacts Cost?
+- Subscription type :  The type of subscripton being used
+- Resource Type : The resource type for example VM or Storage
+- Usage Meters  : Utilities like ingress/egress network traffic and disk sizes
+- Resource Usage : The cost of using a resource
+- Location : Cost may vary for different regions
+
+## Cost Best Practices
+|Best Pratices|Cost Tools|
+|-|-|
+|Select appropriate too for the user case|Pricing Calculator|
+|Deallocate resources when not needed|Total Cost of Ownership (TCO) Calculator|
+|Use cloud capabilities where possible (Scalability,elasticity)||
+|Plan Cost prior to purchase||
+
+### Tools Definition 
+- Pricing Calculator
+Used to create quotes of work loads
+
+- TCO
+Helps simulate how much it would cost to run the on premisis workloads
+on Azure. Compare costs to determine cost savings between on-premises and cloud solutions.
+
+- Microsoft Cost Management
+Microsoft Cost Management is a suite of tools that help organizations monitor, allocate, and optimize the cost of their Microsoft Cloud workloads.
+Analyze costs , apply filtering and create budgets.
+
+## Building a cloud governance strategy with azure tooling
+### Cloud Governance
+Cloud governance is a set of policies and rules used by companies who build or work in the cloud
+
+### Planning cloud strategy
+- Define : Define the governance needs of the organization 
+- Plan : PLan which tools will be used to implement governance 
+- Ready : Getting an understanding of how the tools will be used to implement governance
+- Adopt : Implementing the cloud stategy for the organization
+
+### Governance Services
+- Management groups and subscriptions <br>
+Organise subscriptions into hierarchical structures
+- Azure RBAC <br>
+Provide access to resources at varying scopes
+- Policies <br>
+Implement policies to enforce standards
+- Locks and Tagging <br>
+Lock resources to prevent deletion and modification
+
+# Identity
+
+
+# Role-Based Acess Control
+# Azure Storage
+# Virtual Networking
+# Intersite connectivity
+# Azure virtual machines
+# Network Traffic Management
+# Web App and Containers
+# Monitoring
+# Backup and recovery
+# Wrap-up and practice
+
