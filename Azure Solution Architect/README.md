@@ -545,12 +545,12 @@ It helps users identify services or resources that aren't work 100% capacity usi
 - Log analytics: Lets the user analyse logs. in order to query a user would need to use Kusto Query Language (KQL)
 - Application insights: Give a user insights into an application. Works with web apps only.
 - Azure Monitor Alerts: Provides notifications in response to unexpected events. Comprises of an Alert rule made up of<br>
-   {
+   
 1) Monitored Resource:VM
 2) Monitored Telemetry:CPU Utilization
 3) Conditions to Trigger the Alert: > 90% for 5 minutes
 4) Assigned Severity: LEvel 2 - Warning <br>
- }<br>
+ 
 Action Group = The actions to take place once an alert is triggered.
 
 ## Azure Service Health
