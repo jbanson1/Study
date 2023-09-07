@@ -490,7 +490,7 @@ Enabling several devices to connect to a a website in order to make several requ
 ### Public and Private Endpoints
 #### Public Endpoints = Publicly Reachable PaaS Services
 ##### Service Endpoint
-Allows you to connect privately connect VNet subnet to Azure Paas Services. <br>
+Allows you to connect privately connect VNet subnet to Azure PAAS Services. <br>
 Direct Connection from subnet to Azure PaaS services. <br>
 Connects over Microsoft's private backbone (not over public internet)
 
