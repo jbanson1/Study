@@ -672,17 +672,17 @@ to another place.
 
 ## Managing Azure Cost
 ### What Impacts Cost?
-- Subscription type :  The type of subscripton being used
+- Subscription type :  The type of subscription being used
 - Resource Type : The resource type for example VM or Storage
 - Usage Meters  : Utilities like ingress/egress network traffic and disk sizes
 - Resource Usage : The cost of using a resource
 - Location : Cost may vary for different regions
 
 ## Cost Best Practices
-|Best Pratices|Cost Tools|
+|Best Practices|Cost Tools|
 |-|-|
 |Select appropriate too for the user case|Pricing Calculator|
-|Deallocate resources when not needed|Total Cost of Ownership (TCO) Calculator|
+|De-allocate resources when not needed|Total Cost of Ownership (TCO) Calculator|
 |Use cloud capabilities where possible (Scalability,elasticity)||
 |Plan Cost prior to purchase||
 
@@ -691,7 +691,7 @@ to another place.
 Used to create quotes of work loads
 
 - TCO
-Helps simulate how much it would cost to run the on premisis workloads
+Helps simulate how much it would cost to run the on premises workloads
 on Azure. Compare costs to determine cost savings between on-premises and cloud solutions.
 
 - Microsoft Cost Management
@@ -706,11 +706,11 @@ Cloud governance is a set of policies and rules used by companies who build or w
 - Define : Define the governance needs of the organization 
 - Plan : PLan which tools will be used to implement governance 
 - Ready : Getting an understanding of how the tools will be used to implement governance
-- Adopt : Implementing the cloud stategy for the organization
+- Adopt : Implementing the cloud strategy for the organization
 
 ### Governance Services
 - Management groups and subscriptions <br>
-Organise subscriptions into hierarchical structures
+Organize subscriptions into hierarchical structures
 - Azure RBAC <br>
 Provide access to resources at varying scopes
 - Policies <br>
@@ -719,12 +719,94 @@ Implement policies to enforce standards
 Lock resources to prevent deletion and modification
 
 # Identity
+## Azure Active Directory
+### AAD Features
+1. IAM PLatform <br>
+IAM for Azure cloud-based resources
+2. Identity Security<br>
+Additional security with MFA and Privileged Identity Management
+3. Collaboration and Development<br>
+Azure AD B2B for collaboration and Azure AD B2C support development.
+4. Monitoring<br>
+Audit logs, security monitoring,identity protection and risk management.
+5. Identity Integration<br>
+Hybrid Identity(using AD Connect) and single sign on using Azure Domain Services.
+6. Enterprise Access<br>
+Additional security for applications and devices both on-premises and in the cloud.
+
+ ## Managing Tenants
+ ### Designing the Tenant
+ Planning out the deign of our tenant will support easy adoption.
+
+### Steps to create Tenant
+(Go Over again)
+
+Tenants are bound within a geographical region. Within the tenant / object is where you will have users and groups 
+devices and applications ... 
+As such we use IAM resource to provide access to resources.
+
+1. Build secure Foundations<br>
+Set up best practices, MFA, back up, global admin,privileged users for specific tasks
+2. Populate Identity resources<br>
+Add users, groups, devices and hybrid identities
+3. Identify Apps<br>
+Identify apps to be used from app gallery and register apps from on premises.
+4. Monitor and Automate<br>
+Monitor administrators, perform access reviews and automate user lifecycle.
+
+## Creating and Managing Users
+### Types of Users
+- Administrators
+Users with an administrator role assigned
+- Members
+Regular users that are native to Azure AD
+- Guests 
+External users that are invited to the Azure AD tenant
+<br>
+- Role assignment:<br>
+Determines the permissions and access users are given.
+- Object Ownership: <br>
 
 
-# Role-Based Acess Control
+### Methods of Creating Users
+
+- Azure Portal
+Navigate to Azure AD Service > select Users > New User
+
+- Azure CLI
+az ad user create
+
+- PowerShell
+new-AzureADUser
+
+## Groups and Managing Groups
+- Owners and Members: <br>
+
+
+- Types of Group: <br>
+1. Security:<br>
+Security groups are used to manage resources for a group of users.
+
+2. Microsoft 365:<br>
+Used to grant members of a group access to things like a shared mailbox,Calendars,Files....
+
+
+- Membership type: <br>
+1. Assigned :<br>
+Users are specifically selected to be apart of a group.
+
+2. Dynamic User :<br>
+Users are placed in a group based upon the properties they have.
+Membership rules that are created automate the process.
+
+3. Dynamic Device :<br>
+Users are placed in a group based upon device properties.
+
+
+# Role-Based Access Control
 # Azure Storage
 # Virtual Networking
-# Intersite connectivity
+# Inter-site connectivity
 # Azure virtual machines
 # Network Traffic Management
 # Web App and Containers
