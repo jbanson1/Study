@@ -635,7 +635,7 @@ Using Managing Groups
 
 ## Azure policy 
 - Policy Definition:<br>
-Defines evalutaion criteria for compliance and defines the actions that take place.
+Defines evaluation criteria for compliance and defines the actions that take place.
 
 - Policy assignment:<br>
 The scope at which we will assign our policy. The scope could be management group,
