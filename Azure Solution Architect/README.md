@@ -802,8 +802,81 @@ Membership rules that are created automate the process.
 3. Dynamic Device :<br>
 Users are placed in a group based upon device properties.
 
+## Creating Administrative Units
+ It is a AAD resource that contains users, groups or resources often described as a container.
+ - They can't be nested
+ - They are not present in AAD Identity 
+ 
+ ### benefits
+ - allow you to control the scope of your Administrative users
+
+## Configuring SSPR (Self Service Password Reset)
+
+### Describing SSPR
+It is a process that enables unauthenticated users to reset their own passwords. This remove the dependency or overhead on other departments.
+
+### Process
+1. Localisation : Checking the browser local settings
+2. Verification : Verifying the user using various authentication methods
+3. Authentication : Authenticating the Identity
+4. Password Reset : CHanging the password
+5. Notification : To state whether the user should be notified upon changing of the password
+
+### Method
+- Mobile App using authenticator
+- Mobile App Code using time based codes
+- Email authentication methods
+- Mobile phone method using phone call or sms
+- Office Phone 
+- Security Question
+
+## Azure Device Management
+BAsed upon the architecture of a companies cloud users may be able to log in using their own devices. But companies would need to make sure that the devices accessing their resources are secure.
+
+Giving devices Identities so that they are able to access resources for an organisation 
+
+### How to register a device
+- Azure AD Registered : Allows users to sign in using a Microsoft account .Supports Windows 10,ios,iPadOS,Android and macOS
+- Azure AD Joined : A devices owned by the organisation and accesses Azure AD through work account. supports windows 10 and Server 2019
+- Hybrid : A device issued to the employee that can be used on premise and away
 
 # Role-Based Access Control
+
+WHO can do WHAT WHERE
+- WHO :  Security principles
+- WHAT : What can they be authorized to do
+- WHERE : Scope where they are authorized to perform certain actions
+
+## Azure Roles vs Azure AD Roles
+### Azure Roles
+Azure roles are for resources that are inside of our Azure subscription.
+
+- Owner : Full access to resources and delegates access
+- Reader : Can only view resources
+- Contributor Role : Can create and manage resources
+- User Access Administrator Role : Can delegate access to resources
+
+### Azure AD Roles
+A special set of roles outside of the tenant that manage and create the identity roles within the tenant subscription.
+
+- Global admin role : Manage Azure Ad Resources entirely 
+- Billing Admin : Can perform billing tasks
+- User Admin : Manage users and groups inside of our AD Tenant
+- Helpdesk Administrator : helpdesk functions
+
+|Azure Roles |Azure AD Roles|
+|--|--|
+|Manage access to Azure Resources|Manage access to azure AD Resources|
+|Scope can be at multiple levels|Scope is at tenant level|
+|Support custom roles|Support custom roles|
+|Main Roles<br> -Owner <br>-Contributor <br> -Reader <br>-User access admin | Main Roles<br> -Global Admin <br>-Billing Admin <br> -User Admin <br>-Helpdesk admin |
+
+## Assigning Access to Resources
+RBAC is an authorization system.
+
+## Creating Custom Roles
+To create custom roles you need a UA admin role or A global role
+
 # Azure Storage
 # Virtual Networking
 # Inter-site connectivity
@@ -812,5 +885,5 @@ Users are placed in a group based upon device properties.
 # Web App and Containers
 # Monitoring
 # Backup and recovery
-# Wrap-up and practice
 
+ 
