@@ -878,6 +878,34 @@ RBAC is an authorization system.
 To create custom roles you need a UA admin role or A global role
 
 # Azure Storage
+
+### Types of Data Storage
+- Azure BLOB : For Object-oriented storage
+- Azure Queue : Message based storage for microservices 
+- Azure Files : Cloud-based file-sharing service
+- Azure Table : non-relational semi-structured data storage service
+
+### Components of a storage account
+- Account Type : Determines features and cost
+- Performance Tier : Determines performance levels
+- Replication : Determines infrastructure dependency
+- Access Tier : Determines access levels and cost
+
+### Understanding storage redundancy 
+As a general rule you would want 3 copies.
+
+- Local Redundant Storage (LRS) : Where all copies of data are within the same Availability Zone.
+- Zone Redundant Storage (ZRS) : Where 3 copies exist in 3 availability zones within the same region.
+- Geo-redundant Storage (GRS) : 3 copies of data within 2 regions within 2 availability zones.
+- Geo-Zonal Redundancy Storage : Store our data in each availability zone in the home region and 3 copies in another regions availability zone.
+
+### Key Breakdown 
+|Account Type|General purpose V1 <br> General purpose V2|Legacy for BLOBs,files,queues,and tables <br>Recommended for BLOBs,files,queues,and tables|
+|--|--|--|
+|Performance Tier|BLOB Storage <br>Standard <br>Premium|Legacy blob-specific accounts <br> Default Storage Performance Tier <br> High performance storage tier|
+|Replication|LRS<BR>ZRS<BR>GRS<BR>GZRS||
+|Access Tier|Hot<br>Cold<br>Archived|frequently accessed data <br> infrequently accessed data <br> Backup data Rarely Accessed|
+
 # Virtual Networking
 # Inter-site connectivity
 # Azure virtual machines
