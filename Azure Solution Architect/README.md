@@ -906,6 +906,67 @@ As a general rule you would want 3 copies.
 |Replication|LRS<BR>ZRS<BR>GRS<BR>GZRS||
 |Access Tier|Hot<br>Cold<br>Archived|frequently accessed data <br> infrequently accessed data <br> Backup data Rarely Accessed|
 
+## BLOB Storage
+object based and easily accessible from HTTP/REST
+
+### Components
+- BLOB Service : Sub-service for storage accounts
+- BLOB Container : The container to store BLOBS
+- BLOBS : the data stored
+
+### Types of BLOB
+- Block BLOBS : Storing images or videos best for streaming.
+- Append BLOBS : Log files 
+- Page BLOBS : Virtual Machine Disks
+
+### Access Control
+Public access is granted to BLOBS at the storage account level.
+
+#### Container Access Level
+It has options
+- Private : No anonymous access
+- BLOB : anonymous access
+- Container : anonymous access to the container and Blobs it contains
+
+## Object Replication
+Asynchronously copies BLOBS between storage accounts
+- Requires source and destination storage accounts they need to have versioning enabled and change feed(only on the source account).
+
+Benefits: <br>
+- Minimised latency : reduced latency on read requests
+- Increase efficiency : Processing in other regions may be faster
+- Data distribution : PRocessing data in one place then distributing it to other regions.
+- Cost optimization  : moving replicated data to archives can save cost. 
+
+Key Takeaways: <br>
+- Versioning
+- Change Feed is required on the source account.This is as Azure storage monitors the $blobchangefeed to advise replication
+- Replication is supported across subscriptions and azure AD Tenants
+- A storage account can only have 2 destinations accounts. Each policy supports a single pairing using a policy ID.
+
+## BLOB Lifecycle Management
+Automation to move BLOBS as they age. Through the different access tiers.
+GPv2 Storage account
+
+## Configuring Azure Files
+A file share service that shares using SMB/NFS connectivity.
+NFS is mostly for internal sharing.
+
+Works with Windows,Linux and MacOS.
+
+## Configuring Azure File Sync
+An extension that enables you to extend the capabilities of on premises files servers
+Works on windows only.
+Windows 2012 R2 or later versions.
+The servers require Azure file sync agent installed in order to work.
+
+## Storage Network Access
+### Storage Access Options
+- Public Endpoints : All services are public
+- Restricted Access : Storage accounts are restricted.
+- Private Endpoints : Provide private IP access for resources in an associated VNet.
+
+
 # Virtual Networking
 # Inter-site connectivity
 # Azure virtual machines
