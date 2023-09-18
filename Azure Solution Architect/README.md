@@ -963,11 +963,87 @@ The servers require Azure file sync agent installed in order to work.
 ## Storage Network Access
 ### Storage Access Options
 - Public Endpoints : All services are public
-- Restricted Access : Storage accounts are restricted.
+- Restricted Access : Storage accounts are restricted.I.E Allowing certain ip addresses access.
 - Private Endpoints : Provide private IP access for resources in an associated VNet.
 
+### Key Take Away
+- Each sub-service has an endpoint
+
+## Securing storage Accounts
+By default all data is encrypted using Storage Service Encryption(SSE).
+All data in transit is secured using HTTPS.
+
+## Storage Authentication
+The Management LAyer and the Data layer require securing 
+- Access Keys : can be given to specific resources to use.
+- Azure Ad Authentication
+
+## Azure Jobs
+- Import : jobs are used to move large amounts of data when the bandwidth is poor.Sending files to Azure.
+- Export : Receive data from azure to on premises.<br>
+
+Drives need to be prepared using WAImportExport CLI Tool which can only be used on windows for Azure Blob and files.
+
+|Storage Explorer|AzCopy|
+|--|--|
+|Manage storage accounts easily|Manage storage accounts easily but CLI|
+|can use Azure Active directory (AD) or shared access signature (SAS)|can use Azure Active directory (AD) or shared access signature (SAS) but with CLI|
+|GUI is provided| Scripting capabilities meaning more options available|
+|AzCopy is used under the hood||
 
 # Virtual Networking
+Isolated Network on the Azure cloud.
+- Which can provide private connectivity between resources.
+- Provides integration between on-prem networks and remote user devices.
+
+
+## Designing a network
+1. Determine IP CIDR : Select a Classless Inter-Domain Routing (CIDR) notation that allows for growth.
+2. Subnetting requirements : Segmentation of subnet to match user requirements.
+3. Connectivity Needs : Determining the type of connectivity required. When public internet is required and when private is required.
+
+
+## Features of VNet
+- Subnetting
+- Private networking : Private IP for resources
+- Public networking : using public IP resource  (IPv4 and IPv6)
+- Peering
+- Network Gateway using Gateway subnets to make VPN connections.
+- Monitoring : Azure Vnet makes monitoring easy. 
+
+NB: State largest and smallest IP address sizes !!!!!!!!
+
+## Deploying Network resources
+### Types of IP Addresses
+- Private IPs : Allow private connectivity between resources
+- Public IPs : Allow public connectivity between resources
+
+## Types of public sku
+### Basic SKU
+ Statically or Dynamically assignable Private IP(PIP) that is accessible by default and requires an Network Security Group(NSG) to restrict traffic. Does not support availability zone deployments.
+
+ ### Standard SKU
+ Statically or Dynamically assignable Private IP(PIP) that is not accessible by default and requires an Network Security Group(NSG) to allow traffic. Does support availability zone deployments.
+
+ ## Routing virtual Networks
+- System Routes : Default routes built in to virtual networks cannot be modified.
+- Custom Routes : User defined routes or BGP routes that override system routes.
+
+Order of importance <br>
+--
+Custom routes (User routes) > Border Gateway Protocol (BGP) > System Routes
+
+## Network Security Groups
+Used to control the flow of traffic in a VNet. Does this by creating rules as to what is allowed/denied.Controlling the security on the subnet or Network Interface Controller (NIC) network layers. Prioritises rules. 
+- Only works with Subnet or NIC focuses on individual resources whiles subnet rules would affect every resource within
+- Priority rules are between 100 to 4096 the lower the number the higher the precedence of the rule
+
+Network Security Groups are stateful meaning a rule focusing inbound would also be created for outbound traffic.
+
+
+
+
+
 # Inter-site connectivity
 # Azure virtual machines
 # Network Traffic Management
