@@ -1040,8 +1040,33 @@ Used to control the flow of traffic in a VNet. Does this by creating rules as to
 
 Network Security Groups are stateful meaning a rule focusing inbound would also be created for outbound traffic.
 
+## Azure DNS
+Domain name Service go over
+
+## Azure Firewall(PAAS)
+
+Features
+--
+- DNAT and SNAT : configure outbound /inbound NAT rules for your network.
+- Network Rules : Configure network (layer 4) rules for what traffic is allowed.
+- Application Rules : Configure rules for filter websites visited from your network.
+- Threat Intel : Identify malicious IPs and domains.
+- Monitoring : Integrate with Azure Monitor to capture firewall traffic.
+
+## Steps to implement
+1. Create Vnet
+2. create Azure FireWall Subnet which must have a prefix of a /26 or lower
+3. create firewall
+4. Route traffic through the firewall
 
 
+## Using service endpoints
+To access PAAS services
+Service endpoints provide private connectivity to connect vm to a service from inside a virtual network.
+Happens over a private connection. Not all services are supported.Services differ per region. Services are not given a private IP.
+- Can use NSG rules using service tag to drill down what resources are accessed.
+
+## Private link
 
 
 # Inter-site connectivity
