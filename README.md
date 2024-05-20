@@ -13,6 +13,11 @@ This repository contains notes and solutions for various CS courses and assignme
 |--|--|--|
 |Azure Solutions Architect Associate|aCloud Gurus & Books|  | [Notes]()|
 
+### Python
+|Subject  | Link/Resource  |Notes/Solutions|
+|--|--|--|
+|Python Studies|  | [Notes](https://github.com/jbanson1/Study/tree/main/Python)|
+
 ## TypeScript
 |Subject  | Link/Resource  |Notes/Solutions|
 |--|--|--|
