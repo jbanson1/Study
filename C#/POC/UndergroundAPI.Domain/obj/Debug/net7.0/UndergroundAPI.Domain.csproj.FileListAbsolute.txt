@@ -1,0 +1,15 @@
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\bin\Debug\net7.0\UndergroundAPI.Domain.deps.json
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\bin\Debug\net7.0\UndergroundAPI.Domain.dll
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\bin\Debug\net7.0\UndergroundAPI.Domain.pdb
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\bin\Debug\net7.0\UndergroundAPI.Infrastructure.dll
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\bin\Debug\net7.0\UndergroundAPI.Infrastructure.pdb
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\UndergroundAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\UndergroundAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\UndergroundAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\UndergroundAPI.Domain.AssemblyInfo.cs
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\UndergroundAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\UndergroundAPI.Domain.csproj.CopyComplete
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\UndergroundAPI.Domain.dll
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\refint\UndergroundAPI.Domain.dll
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\UndergroundAPI.Domain.pdb
+C:\Users\king_\Documents\Projects\UndergroundAPI.Domain\obj\Debug\net7.0\ref\UndergroundAPI.Domain.dll

@@ -1,0 +1,17 @@
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\bin\Debug\net6.0-windows\NoteTakingApplication.exe
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\bin\Debug\net6.0-windows\NoteTakingApplication.deps.json
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\bin\Debug\net6.0-windows\NoteTakingApplication.runtimeconfig.json
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\bin\Debug\net6.0-windows\NoteTakingApplication.dll
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\bin\Debug\net6.0-windows\NoteTakingApplication.pdb
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.csproj.AssemblyReference.cache
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.Form1.resources
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.csproj.GenerateResource.cache
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.AssemblyInfoInputs.cache
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.AssemblyInfo.cs
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.csproj.CoreCompileInputs.cache
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.dll
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\refint\NoteTakingApplication.dll
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.pdb
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\NoteTakingApplication.genruntimeconfig.cache
+C:\Users\king_\Documents\Projects\NoteTakingApplication\NoteTakingApplication\obj\Debug\net6.0-windows\ref\NoteTakingApplication.dll

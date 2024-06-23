@@ -1,0 +1,12 @@
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\bin\Debug\net6.0\JoesConsoleApp.Domain.deps.json
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\bin\Debug\net6.0\JoesConsoleApp.Domain.dll
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\bin\Debug\net6.0\JoesConsoleApp.Domain.pdb
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\JoesConsoleApp.Domain.csproj.AssemblyReference.cache
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\JoesConsoleApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\JoesConsoleApp.Domain.AssemblyInfoInputs.cache
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\JoesConsoleApp.Domain.AssemblyInfo.cs
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\JoesConsoleApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\JoesConsoleApp.Domain.dll
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\refint\JoesConsoleApp.Domain.dll
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\JoesConsoleApp.Domain.pdb
+C:\Users\king_\Documents\Projects\JoesConsoleApp.Domain\obj\Debug\net6.0\ref\JoesConsoleApp.Domain.dll
