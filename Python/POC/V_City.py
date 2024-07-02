@@ -2,7 +2,7 @@
 z = []
 
 def format_items(x,y):
-    return (f"'{x}, {y}'")
+    return (f"{x}, {y}")
 
 for i in range(3):
     x = input("Insert a country ")
