@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\Variables\\RecipeLibrary\\RecipeLibrary.csproj": {}
+    "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\RecipeLibrary\\RecipeLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\Variables\\RecipeLibrary\\RecipeLibrary.csproj": {
+    "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\RecipeLibrary\\RecipeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\Variables\\RecipeLibrary\\RecipeLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\RecipeLibrary\\RecipeLibrary.csproj",
         "projectName": "RecipeLibrary",
-        "projectPath": "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\Variables\\RecipeLibrary\\RecipeLibrary.csproj",
+        "projectPath": "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\RecipeLibrary\\RecipeLibrary.csproj",
         "packagesPath": "C:\\Users\\king_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\Variables\\RecipeLibrary\\obj\\",
+        "outputPath": "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\RecipeLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\king_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

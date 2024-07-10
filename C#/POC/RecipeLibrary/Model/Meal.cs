@@ -8,18 +8,21 @@ namespace RecipeLibrary.Model
 {
     public class Meal
     {
+        public int id { get; set; }
+
         public string name { get; set; }
 
-        public List<string> ingredients { get; set; }
+        public List<Ingredient> ingredients { get; set; }
 
         public Meal()
         {
-            ingredients = new List<string>();
+            ingredients = new List<Ingredient>();
         }
     }
 
-    public class ingredients
+    public class Ingredient
     {
+        public int id { get; set; }
         public string description { get; set; }
     }
 }
