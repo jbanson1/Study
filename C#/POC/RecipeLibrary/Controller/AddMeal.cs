@@ -5,7 +5,7 @@ namespace RecipeLibrary.Controller
 {
     public class AddMeal
     {
-        public  void AddNewMeal()
+        public  int AddNewMeal()
         {
             AddItems AI = new AddItems();
 
@@ -45,7 +45,9 @@ namespace RecipeLibrary.Controller
                 Console.WriteLine(item.description);
             }
 
-
+            Console.WriteLine("Would you like to go back to the menu");
+            var storeMoreMeals = Console.ReadLine().ToLower();
+            return storeMoreMeals == "yes" ? 1 : 0;
         }
     }
 }

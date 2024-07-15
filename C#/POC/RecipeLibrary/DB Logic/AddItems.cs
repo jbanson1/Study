@@ -23,7 +23,7 @@ namespace RecipeLibrary.DB_Logic
                 Console.WriteLine("Couldnt save");
             }
 
-            int returnValue = context.SaveChanges();
+            context.SaveChanges();
         }
     }
 }
