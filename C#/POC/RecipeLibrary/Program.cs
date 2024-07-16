@@ -1,5 +1,7 @@
 ﻿using RecipeLibrary.Controller;
 using RecipeLibrary.Model;
+using FluentValidation;
+
 namespace RecipeLibrary
 {
     internal class Program
@@ -10,11 +12,13 @@ namespace RecipeLibrary
             AddMeal addMeal = new AddMeal();
             DeleteMeal deleteMeal = new DeleteMeal();
             ViewRecipe  viewRecipe = new ViewRecipe();
+            UpdateMeals updateMeals = new UpdateMeals();
             
             while (userChoice == 1)
             {
-
-                Console.WriteLine("Welcome to recepie library Would you like to \n 1.View the all saved Meals available\n 2.View specific meal \n 3.Add a meal to the library \n 4.Delete a Meal");
+                Console.WriteLine("\nWelcome to recepie library Would you like to \n" +
+                    " 1.View the all saved Meals available\n 2.View specific meal \n" +
+                    " 3.Add a meal to the library \n 4.Delete a Meal \n 5.Update a meal");
 
                 var userSelection = Convert.ToInt32(Console.ReadLine());
 
@@ -44,6 +48,11 @@ namespace RecipeLibrary
                         Console.WriteLine("What meal would you like to delete");
                         input = Convert.ToInt32(Console.ReadLine());
                         userChoice = deleteMeal.deletemeal(input);
+                        break;
+
+                    case 5:
+                        //Update a meal
+                        userChoice = updateMeals.UpdateMeal();
                         break;
 
                     default:

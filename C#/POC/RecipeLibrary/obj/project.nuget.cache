@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "b7Wa9EjH+6wFxUKWzLyXzjQ1SKiJDO9KxB8cteo4gzijd/koyZJacNEJQFznY2b6FcfuabGe3NMEs3Hmo6sRaw==",
+  "dgSpecHash": "eJcy8p4jAAIrhFs/YnWi/OwQ5gFU03gFP8OAobEgUmfWYLyu+9fdS+4KOFnG7hMhSTCkI6xJIekN9YIDyF8rog==",
   "success": true,
   "projectFilePath": "C:\\Users\\king_\\OneDrive\\Documents\\GitHub\\Study\\C#\\POC\\RecipeLibrary\\RecipeLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\king_\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
+    "C:\\Users\\king_\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\king_\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\king_\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\king_\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",

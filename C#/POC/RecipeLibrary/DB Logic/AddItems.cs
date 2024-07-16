@@ -12,7 +12,7 @@ namespace RecipeLibrary.DB_Logic
         {
             var context = new ApplicationDbContext();
 
-            //Insert try catch 
+            //Try catch 
             try
             {
                 context.meals.Add(item1);

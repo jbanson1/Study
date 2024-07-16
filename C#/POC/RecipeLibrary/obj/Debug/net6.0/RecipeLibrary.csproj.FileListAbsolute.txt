@@ -52,3 +52,4 @@ C:\Users\king_\OneDrive\Documents\GitHub\Study\C#\POC\RecipeLibrary\bin\Debug\ne
 C:\Users\king_\OneDrive\Documents\GitHub\Study\C#\POC\RecipeLibrary\obj\Debug\net6.0\RecipeLibrary.csproj.CopyComplete
 C:\Users\king_\OneDrive\Documents\GitHub\Study\C#\POC\RecipeLibrary\obj\Debug\net6.0\RecipeLibrary.Migrations.InitialCreate.resources
 C:\Users\king_\OneDrive\Documents\GitHub\Study\C#\POC\RecipeLibrary\obj\Debug\net6.0\RecipeLibrary.csproj.GenerateResource.cache
+C:\Users\king_\OneDrive\Documents\GitHub\Study\C#\POC\RecipeLibrary\bin\Debug\net6.0\FluentValidation.dll

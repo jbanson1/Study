@@ -8,5 +8,10 @@ namespace RecipeLibrary.Controller
 {
     public class UpdateMeals
     {
+        public int UpdateMeal()
+        {
+            Console.WriteLine("Hello will be updating you soon");
+            return 1;
+        }
     }
 }
